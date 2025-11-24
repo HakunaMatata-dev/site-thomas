@@ -1,0 +1,68 @@
+/* Code css */
+
+/* Global */
+body {
+  font-family: "Heebo", sans-serif;
+  margin:0;
+}
+
+/* Nav-bar */
+nav {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    width :1200px;
+    margin: 15px auto 0px auto;
+}
+#nav-links {
+    display: flex;
+    gap: 65px;
+}
+.nav-link {
+    color : black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Header */
+header {
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    width :1200px;
+    margin :75px auto;
+}
+
+#header-content {
+    width: 630px;
+}
+
+h1 {
+    font-weight: 700px;
+    font-size: 44px;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    font-size: 16px;    
+    margin: 35px 0px;
+}
+
+#button-cv {
+    background-color: #FF6464;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+/* Blog */
+#blog {
+    background-color: #EDF7FA;
+}
+
+#blog-content {
+    width :1200px;
+    margin:auto;
+}
