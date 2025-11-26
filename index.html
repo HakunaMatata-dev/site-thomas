@@ -6,27 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeThom</title>
+    <link rel="shortcut icon" href="Images/photodethomas.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    
 </head>
 
 <!-- Body -->
  <body>
+    <!-- Barre navigation -->
     <nav>
         <img src="Images/Logo.png" alt ="BeThom">
         <div id="nav-links">
             <a class="nav-link" href="index.html">Accueil</a>
             <a class="nav-link" href="#blog">Blog</a>
-            <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#portfolios">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </div>
         <!-- Pour mobile
             <div class="menu-btn">☰</div>
         -->
         </nav>
-
+    
+    <!-- En-tête -->
     <header>
         <div id="header-content">
             <h1>Hi, je suis Thomas,<br />graphiste</h1>
@@ -38,33 +42,141 @@
        </div>
     </header>
 
+    <!-- Blog -->
     <section id="blog">
         <div id="blog-content">
             <h2>Articles récents</h2>
-            <div id ="articles"></div>
-            <article class="article-blog">
-                <h3 class="article-title">Créer un design system à partir de zéro</h3>
-                <p class="date-categorie">
-                    <span>12 Feb 2020</span>
-                    <span>|</span>
-                    <span>Design, Pattern</span>
-                </p>
-                <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
-            </article>
-            <article class="article-blog">
-                <h3 class="article-title">Créer des icônes pixel perfect dans Figma</h3>
-                <p class="date-categorie">
-                    <span>12 Feb 2020</span>
-                    <span>|</span>
-                    <span>Figma, Icon Design</span>
-                </p>
-                <p class="article-description">Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu’aux applications mobiles.</p>
-            </article>
+            <div id ="articles">
+                <article class="article-blog">
+                    <h3 class="article-title">Créer un design system à partir de zéro</h3>
+                    <p class="date-categorie">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </p>
+                    <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
+                </article>
+                <article class="article-blog">
+                    <h3 class="article-title">Créer des icônes pixel perfect dans Figma</h3>
+                    <p class="date-categorie">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Figma, Icon Design</span>
+                    </p>
+                    <p class="article-description">Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu’aux applications mobiles.</p>
+                </article>
+            </div>
         </div>
     </section>
 
+    <!-- Portfolio -->
+     <section id="portfolios">
+        <div id="portfolio-content">
+            <h2>Travaux en vedette</h2>
+            <article class="portfolio">
+                <div class="portfolio-image">
+                    <img src="Images/Portfolio1.jpg" alt ="Design de tableaux de bord">
+                </div>
+                <div>
+                    <h3 class="portfolio-title">Design de tableaux de bord</h3>
+                    <div class="date-type">
+                        <span class="portfolio-date">2020</span>
+                        <span class="portfolio-type">Dashboard</span>
+                    </div>
+                    <p class="portfolio-description">Un projet de conception d’interface utilisateur pour une plateforme de gestion. L’objectif était de proposer un tableau de bord intuitif et esthétique.</p>
+                </div>
+            </article>
+            <article class="portfolio">
+                <div class="portfolio-image">
+                    <img src="Images/Portfolio2.jpg" alt ="Portraits vibrants de 2020">
+                </div>
+                <div>
+                    <h3 class="portfolio-title">Portraits vibrants de 2020</h3>
+                    <div class="date-type">
+                        <span class="portfolio-date">2018</span>
+                        <span class="portfolio-type">Illustration</span>
+                    </div>
+                    <p class="portfolio-description">Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+                </div>
+            </article>
+            <article class="portfolio">
+                <div class="portfolio-image">
+                    <img src="Images/Portfolio3.jpg" alt ="36 jours de typographie">
+                </div>
+                <div>
+                    <h3 class="portfolio-title">36 jours de typographie</h3>
+                    <div class="date-type">
+                        <span class="portfolio-date">2020</span>
+                        <span class="portfolio-type">Typography</span>
+                    </div>
+                    <p class="portfolio-description">Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+                </div>
+            </article>
+        </div>
+     </section>
 
+     <!--Contact-->
+     <section id="contact">
+        <h2>Me contacter</h2>
+        <div id="contact-content">
+            <div id="coordonnees">
+                <div class="coordonnee">
+                    <h3 id="coordonnees-title">Parlons-en</h3>
+                    <p id="parlons-en">Vous avez une grande idée ou un projet à développer et besoin d'aide ? Contactez-moi, je serai ravi d'échanger avec vous et de vous accompagner.</p>
+                </div>
+                <div class="coordonnee">
+                    <h3 class="coordonnees-subtitle">Email</h3>
+                    <a id="mail" href="mailto:beebs@gmail.com">beebs@gmail.com</a>
+                </div>
+                <div class="coordonnee">
+                    <h3 class="coordonnees-subtitle">Socials</h3>
+                    <span><a class="socials-link" href="https://www.instagram.com" target="_blank">Instagram</a></span>
+                    <span><a class="socials-link" href="https://X.com" target="_blank">Twitter</a></span>
+                    <span><a class="socials-link" href="https://www.facebook.com" target="_blank">Facebook</a></span>
+                </div>
+            </div>
+            <form id="formulaire">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" required>
 
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="service">Quel service vous intéresse ?</label>
+                <select name="service" id="service" required>
+                    <option value="dashboard">Dashboard</option>
+                    <option value="illustration">Illustration</option>
+                    <option value="typographiSe">Typographie</option>
+                    <option value="autre">Autre</option>
+                        
+                </select>
+
+                <label for="budget">Budget</label>
+                <select name="budget" id="budget" required>
+                    <option value="moins de 100€">Moins de 100€</option>
+                    <option value="entre 100 et 1 000€">Entre 100 et 1 000€</option>
+                    <option value="entre 1 000 et 5 000€">Entre 1 000 et 5 000€</option>
+                    <option value="plus de 10 000 €">Plus de 10 000€</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button>Envoyer</button>
+            </form>
+        </div>     
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="logos">
+            <a href="#" target="_blank"><img src="Images/fb.jpg" alt = "Logo Facebook"></a>
+            <a href="#" target="_blank"><img src="Images/insta.jpg" alt = "Logo Instagram"></a>
+            <a href="#" target="_blank"><img src="Images/twitter.jpg" alt = "Logo Twitter"></a>
+            <a href="#" target="_blank"><img src="Images/Linkedin.jpg" alt = "Logo Linkedin"></a>
+        </div>
+        <p id="copyright">Copyright ©2020 All rights reserved</p>
+    </footer>
 </body>
 
 </html>
