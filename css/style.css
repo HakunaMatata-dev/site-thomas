@@ -27,12 +27,16 @@ nav {
 #nav-links {
     display: flex;
     gap: 65px;
+    list-style: none;
 }
 .nav-link {
     color : black;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
+}
+#menu-btn {
+    display: none;
 }
 
 /* Header */
@@ -48,7 +52,7 @@ header {
 }
 
 #header-content {
-    width: 630px;
+    width: 100%;
 }
 
 h1 {
@@ -222,7 +226,7 @@ label {
     display :flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 50%;
+    width: 100%;
 }
 
 input,select,textarea {
@@ -230,13 +234,11 @@ input,select,textarea {
     border: none;
     border-radius: 0px;
     font-size: 16px;
-    width: 100%; /*Problème*/
     height: 46px;
     text-size-adjust: auto;
 }
 
 textarea {
-    width: 100%; /*Problème*/
     height: 165px;
     resize: none;
 }
@@ -247,7 +249,6 @@ button {
     color: #FFFFFF;
     background-color: #000000;
     text-align: center;
-    width: 100%; /*Problème*/
     height: 56px;
 }
 
@@ -271,4 +272,110 @@ footer {
 #copyright {
     font-size: 14px;
     color :#21243D;
+}
+
+/* Responsive */
+@media (max-width:700px) {
+    /* Bar-Nav */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    #subtitle {
+        text-align: center;
+        font-size: 16px;
+    }
+    #button-cv {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Blog */
+    #articles {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .article-blog {
+        max-width: none;
+        width: 100%;
+    }
+    .article-title {
+        font-size: 22px;
+        margin :0px;
+    }
+    .date-categorie {
+        margin: 10px;
+        font-size: 16px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .article-description {
+        font-size: 16px;
+    }
+
+    /* Portfolios */
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+    .centered-title {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .portfolio-title {
+        font-size: 24px;
+        padding-top: 0px;
+    }
+    .portfolio-date,.portfolio-type, .portfolio-description {
+        font-size: 16px;
+    }
+    .date-type{
+        gap : 25px;
+    }
+    .portfolio-description {
+        margin-bottom: 10px;
+    }
+    .portfolio-image {
+        width : 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    /* Contacts */
+    #coordonnees  {
+        display: none;
+    }
+    #formulaire {
+        width : 100%;
+    }
+
 }
